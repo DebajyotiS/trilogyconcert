@@ -16,5 +16,20 @@
             <!-- Embed your Google Form here -->
             <iframe id="rsvpIframe" src="https://forms.gle/CsXiGopfS9mxY3Yy8" frameborder="0" marginheight="0" marginwidth="0">RSVP Form</iframe>
         </div>
+        <script>
+            function resizeIframe() {
+                var iframe = document.getElementById('rsvpIframe');
+                var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                if (isMobile) {
+                    iframe.style.width = '100vw';
+                    iframe.style.height = '100vh';
+                } else {
+                    iframe.style.width = '700px';
+                    iframe.style.height = '1200px';
+                }
+            }
+            // Call the function initially to set the size
+            resizeIframe();
+        </script>
     </body>
 </html>
