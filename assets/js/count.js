@@ -1,5 +1,5 @@
 function NewYear(){
-    const ConcertDate = new Date(2024, 4, 15);
+    const ConcertDate = new Date(2024, 4, 15, 19, 0, 0, 0);
     const currentdate = new Date();
     const remainigTime = ConcertDate - currentdate;
   
