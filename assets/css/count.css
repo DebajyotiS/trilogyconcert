@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(https://cdn.discordapp.com/attachments/1105189429024391190/1193921275278667786/ds.harvious_Make_a_landing_page_image_for_a_concert_event_36f2af73-a821-4e0c-9db3-3c2974fdee23.png?ex=65ae78d6&is=659c03d6&hm=bcd5eea138c270b87119e772aa7be3af15d4fd2153a20a418ab366f07ab71c8f&);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+  }
+
+.heading{
+text-align: center;
+color: rgb(228, 141, 141);
+padding: 10px;
+font-size: 2rem;
+}
+
+.container {
+display: grid;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+border-radius: 10px;
+color: rgb(255, 255, 255);
+grid-template-columns: repeat(4,1fr);
+text-align: center;
+width: 70%;
+padding: 20px 0px;
+margin-top: 20px;
+
+}
+.box-time h2 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 10px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+}
+
+.box-time p {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 0 10px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+
+}
+
+.button-time p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+  
+  }
+
+@media screen and (max-width:600px) {
+    .container{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+    }
+}
+
+/* ... existing CSS ... */
+
+.navigate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.009); /* Adjust as needed */
+    box-shadow: 2px 5px 2px 2px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 14px 0;
+    margin-top: 10px;
+}
+
+.navigate-button:hover {
+    background-color: #fe343415; /* for example */
+}
+
+.button-text p {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0 0 10px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+  
+  }
