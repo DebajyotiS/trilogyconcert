@@ -141,3 +141,9 @@ margin-top: 20px;
     font-family: Camar;
     color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 480px) {
+  .center-text {
+      font-size: 2rem; /* Adjust as needed */
+  }
+}
