@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+  
 }
 body {
   background: url(https://cdn.discordapp.com/attachments/1105189429024391190/1193921275278667786/ds.harvious_Make_a_landing_page_image_for_a_concert_event_36f2af73-a821-4e0c-9db3-3c2974fdee23.png?ex=65ae78d6&is=659c03d6&hm=bcd5eea138c270b87119e772aa7be3af15d4fd2153a20a418ab366f07ab71c8f&);
