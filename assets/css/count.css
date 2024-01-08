@@ -21,11 +21,11 @@ body {
   margin: 0;
   }
 
-.heading{
-text-align: center;
-color: rgb(228, 141, 141);
-padding: 10px;
-font-size: 2rem;
+  .heading {
+    text-align: center;
+    color: rgb(228, 141, 141);
+    padding: 10px;
+    font-size: 2rem;
 }
 
 .container {
@@ -62,14 +62,42 @@ margin-top: 20px;
   
   }
 
-@media screen and (max-width:600px) {
-    .container{
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  @media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .box-time h2 {
+        font-size: 2.5rem;
+    }
+
+    .box-time p {
+        font-size: 1.5rem;
     }
 }
 
-/* ... existing CSS ... */
+/* Styles for mobile */
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .box-time h2 {
+        font-size: 2rem;
+    }
+
+    .box-time p {
+        font-size: 1rem;
+    }
+}
 
 .navigate-button {
     display: flex;
