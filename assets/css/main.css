@@ -3224,3 +3224,7 @@ input, select, textarea {
 .centered {
     text-align: center;
 }
+
+.reveal-time {
+	text-align: center;
+}
