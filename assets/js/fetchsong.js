@@ -18,8 +18,12 @@ fetch('assets/songs.json')
             const article = articles[i];
             const revealTime = article.querySelector('.reveal-time');
 
-            // Format the reveal time
-            revealTime.textContent = `Will reveal at ${revealDate.toLocaleString()}`;
+            // Format the reveal time without seconds
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const formattedRevealTime = `${revealDate.toLocaleDateString(undefined, options)}`;
+
+            // Set the reveal time text content
+            revealTime.textContent = `Will reveal on ${formattedRevealTime}`;
 
             // Check if the current time is past the reveal time
             if (now >= revealDate) {
@@ -29,7 +33,9 @@ fetch('assets/songs.json')
                 // Update the image and title of the selected song
                 songImage.src = data[i].image;
                 songTitle.textContent = data[i].title;
-                revealTime.textContent = `Revealed on ${revealDate.toLocaleString()}`;
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                const formattedRevealTime = `${revealDate.toLocaleDateString(undefined, options)} ${revealDate.toLocaleTimeString(undefined, options)}`;
+                revealTime.textContent = `was revealed on ${formattedRevealTime}`;
             }
         }
     })
