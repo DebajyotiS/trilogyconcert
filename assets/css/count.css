@@ -9,7 +9,7 @@
   
 }
 body {
-  background: url(https://cdn.discordapp.com/attachments/1105189429024391190/1193921275278667786/ds.harvious_Make_a_landing_page_image_for_a_concert_event_36f2af73-a821-4e0c-9db3-3c2974fdee23.png?ex=65ae78d6&is=659c03d6&hm=bcd5eea138c270b87119e772aa7be3af15d4fd2153a20a418ab366f07ab71c8f&);
+  background: url(../../images/concert.png);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
 
 .container {
 display: grid;
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
 border-radius: 10px;
 color: rgb(255, 255, 255);
 grid-template-columns: repeat(4,1fr);
@@ -52,7 +52,7 @@ margin-top: 20px;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
-  text-shadow: 0 0 10px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+  text-shadow: 0.2px 0.2px 0.2px #fe6a6a, 0.2px 0.2px 0.2px #fe6a6a, 0.2px 0.2px 0.2px #fe6a6a, 0.2px 0,2px 0px #fe6a6a;
 
 }
 
@@ -127,7 +127,7 @@ margin-top: 20px;
 .navigate-button:hover {
     background-color: #fe343415; /* for example */
     color: #ffffff;
-    text-shadow: 0 0 10px #fe6a6a, 0 0 20px #fe6a6a, 0 0 30px #fe6a6a, 0 0 40px #fe6a6a;
+    text-shadow: 0 0 0px #fe6a6a, 0 0 0px #fe6a6a, 0 0 0px #fe6a6a, 0 0 0px #fe6a6a;
 }
 
 .button-text p {
