@@ -29,7 +29,8 @@ fetch('assets/songs.json')
             if (now >= revealDate) {
                 const songImage = article.querySelector('img');
                 const songTitle = article.querySelector('h3');
-
+                const songLink = article.querySelector('a');
+                songLink.href = data[i].link;
                 // Update the image and title of the selected song
                 songImage.src = data[i].image;
                 songTitle.textContent = data[i].title;
